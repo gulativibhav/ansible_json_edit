@@ -1,0 +1,21 @@
+{
+    "apps": [
+        {
+            "autorestart": true,
+            "cwd": "/opt/web-api/PRs/45",
+            "env": {
+                "NODE_ENV": "staging",
+                "NODE_PORT": "9000",
+                "http_proxy": "http://10.251.38.158:8008",
+                "https_proxy": "http://10.251.38.158:8008"
+            },
+            "error_file": "/var/log/pm2/stderr.log",
+            "exec_mode": "cluster",
+            "instances": 0,
+            "merge_logs": true,
+            "name": "PRs_45",
+            "out_file": "/var/log/pm2/stdout.log",
+            "script": "server.js"
+        }
+    ]
+}
